@@ -1,0 +1,11 @@
+import { cp, mkdir, rm, readFile, access } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const root = resolve(import.meta.dirname, '..');
+const html = await readFile(resolve(root, 'public/index.html'), 'utf8');
+const css = await readFile(resolve(root, 'public/styles.css'), 'utf8');
+const assets = [...(html + css).matchAll(/(?:src="|href="|url\(")((?:assets\/)[^"#?]+)/g)].map(m => m[1]);
+for (const asset of new Set(assets)) await access(resolve(root, 'public', asset));
+await rm(resolve(root, 'dist'), { recursive: true, force: true });
+await mkdir(resolve(root, 'dist'), { recursive: true });
+await cp(resolve(root, 'public'), resolve(root, 'dist'), { recursive: true });
+console.log('Build ready: dist/; all local assets verified.');
