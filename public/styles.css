@@ -565,7 +565,7 @@ h1{font-size:clamp(58px,6.4vw,98px);line-height:.90;margin:0 0 26px;max-width:76
 .oatly-white{filter:brightness(0) invert(1)}
 .brand-lockup{display:flex;align-items:center;gap:15px;flex-shrink:0}
 .brand-lockup .oatly-mark{width:112px}
-.brand-cross{font-size:22px;color:#777;font-weight:400}
+.brand-cross{font-size:13px;color:#777;font-weight:700;letter-spacing:.02em}
 .real-logo{min-width:0}
 .real-logo img{width:100px;height:auto}
 .nav{gap:20px}
@@ -644,7 +644,7 @@ a:focus-visible,button:focus-visible{outline:3px solid #3087a6;outline-offset:5p
  .offer-promo{grid-template-columns:auto 1fr}.offer-promo p{grid-column:1 / -1}.offer-promo a{justify-self:end}
 }
 @media(max-width:640px){
- .nav{height:72px;gap:12px}.brand-lockup{gap:8px}.brand-lockup .oatly-mark{width:83px}.real-logo img{width:76px}.brand-cross{font-size:17px}.header-phone{font-size:12px}
+ .nav{height:72px;gap:12px}.brand-lockup{gap:8px}.brand-lockup .oatly-mark{width:83px}.real-logo img{width:76px}.brand-cross{font-size:11px}.header-phone{font-size:12px}
  .hero-grid{padding:38px 0 48px;gap:36px}.hero-brand{width:190px;margin-bottom:26px}h1{font-size:50px}.hero-sub{font-size:21px}.hero-note{font-size:18px}
  .hero-watermark{width:80%;top:68%;right:-25px}.promo{width:min(380px,100%);margin:0 auto}.promo-price{width:84%}
  .product-offer{padding:64px 0}.product-offer-heading{align-items:flex-start;gap:16px;margin-bottom:28px}.product-offer-heading>.oatly-mark{width:92px;margin-top:4px}.product-offer-heading h2{font-size:46px}
