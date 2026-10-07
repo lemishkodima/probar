@@ -580,7 +580,7 @@ h1{font-size:clamp(52px,5.7vw,86px)}
 .hero-video-overlay{background:linear-gradient(90deg,rgba(246,242,232,.94),rgba(246,242,232,.86) 36%,rgba(246,242,232,.50))}
 .product-offer{padding:96px 0;background:#fff}
 .product-offer-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:36px;margin-bottom:36px}
-.product-offer-heading h2{font-size:clamp(46px,5vw,76px);line-height:.92;margin:8px 0 16px}
+.product-offer-heading h2{font-size:clamp(46px,5vw,76px);line-height:.92;margin:8px 0 0}
 .product-offer-heading .lead{margin:0}
 .product-offer-heading>.oatly-mark{width:150px;transform:rotate(-3deg);margin-bottom:8px}
 .offer-card{overflow:hidden;border:2px solid var(--ink);border-radius:30px;background:#fff;box-shadow:10px 10px 0 var(--ink)}
