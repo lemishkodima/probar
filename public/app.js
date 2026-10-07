@@ -16,6 +16,14 @@ form.addEventListener('submit', async (event) => {
   event.preventDefault();
   if (button.disabled || !form.reportValidity()) return;
   const data = Object.fromEntries(new FormData(form));
+  const search = new URLSearchParams(window.location.search);
+  for (const [field, parameter] of Object.entries({
+    utmSource: 'utm_source', utmMedium: 'utm_medium', utmCampaign: 'utm_campaign',
+    utmContent: 'utm_content', utmTerm: 'utm_term'
+  })) {
+    const value = search.get(parameter);
+    if (value) data[field] = value.slice(0, 255);
+  }
   if (data.phone.replace(/\D/g, '').length < 10) {
     status.dataset.state = 'error';
     status.textContent = 'Перевірте номер телефону: введіть щонайменше 10 цифр.';
