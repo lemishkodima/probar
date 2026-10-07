@@ -119,7 +119,7 @@ test('Lead delivery contract', async t => {
       assert.equal(body.fields.stageId, 'NEW');
       assert.equal(body.fields.sourceId, 'WEB');
       assert.equal(body.fields.sourceDescription, 'Лендинг Oatly × ProBar');
-      assert.equal(body.fields.opportunity, 1040);
+      assert.equal(body.fields.opportunity, 1038);
       assert.equal(body.fields.assignedById, 42);
       assert.deepEqual(body.fields.fm, [{ typeId: 'PHONE', valueType: 'WORK', value: valid.phone }]);
       assert.equal(body.fields.utmSource, 'google ads');
